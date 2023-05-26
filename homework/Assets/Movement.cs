@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class TransformTranslate : MonoBehaviour
-{
+public class Movement : MonoBehaviour{
     public float speed;
     private Vector2 movementInput;
 

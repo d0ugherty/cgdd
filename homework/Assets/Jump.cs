@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerMovementExample : MonoBehaviour
-{
+public class Jump : MonoBehaviour{
     public float speed; //move speed
     public float height; // jump height
     public InputAction rightActionVar;
@@ -78,9 +77,9 @@ public class PlayerMovementExample : MonoBehaviour
 
         if (isRightUp) {
         // Handle right movement
-            //if (square_rbody.velocity != Vector2.zero){
-        square_rbody.AddForce(Vector2.left * offset * Time.deltaTime);
-           // }
+            if (square_rbody.velocity != Vector2.zero){
+                square_rbody.AddForce(Vector2.left * offset * Time.deltaTime);
+            }
         isRightUp = false;
         }    
 
