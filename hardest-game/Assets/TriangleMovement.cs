@@ -15,7 +15,7 @@ public class TriangleMovement : MonoBehaviour
     public float speed = 2f;
 
     private bool movingTowardsWallA = true;
-
+    
     private void Update()
     {
         Vector2 targetPosition;
