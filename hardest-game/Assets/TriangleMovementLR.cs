@@ -12,7 +12,7 @@ public class TriangleMovementLR : MonoBehaviour
 {
     public Transform wallA;
     public Transform wallB;
-    public float speed = 2f;
+    public float speed = 0f;
     public float stopDistance = 1.0f;
     private bool movingTowardsWallB;
     private Transform targetWall;
